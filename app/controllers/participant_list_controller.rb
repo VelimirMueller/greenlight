@@ -16,23 +16,13 @@
 # You should have received a copy of the GNU Lesser General Public License along
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 
-class MainController < ApplicationController
-  include Registrar
-  # GET /
-  def index
-    # Store invite token
-    session[:invite_token] = params[:invite_token] if params[:invite_token] && invite_registration
-
-    redirect_to home_page if current_user
-  end
-
-  def impressum
-  end
-
-  def dsgvo
-  end
-
-  def faq
-  end
-
+class ParticipantListController < ApplicationController
+	def participant_list
+		highest_role = current_user.role
+		highest_role.name
+		unless highest_role.get_permission("can_manage_users") || highest_role.name == "super_admin"
+			flash[:error] = "You must be logged in to access this section"
+			redirect_to "/" # halts request cycle
+		  end
+	end
 end

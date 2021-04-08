@@ -18,9 +18,9 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center">
         <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
+        <p class="lead offset-lg-2 col-lg-8 col-sm-12 ">BigBlueButton Videokonferenzsystem vom SerZ</p>
+        <%= link_to "https://www.youtube.com/results?search_query=bigbluebutton+tutorial", target: "_blank" do %>
+          <h4>Schauen Sie sich ein BBB-Tutorial an <i class="far fa-play-circle ml-1"></i></h4>
         <% end %>
       </div>
 
@@ -29,3 +29,296 @@
 </div>
 
 <%= render "main/components/features" %>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+.border{
+	border:solid 1px #efefef
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container mt-8 mb-6 text-center border">
+		<br>
+		<h2 class="text-center">DATENSCHUTZERKLÄRUNG / IMPRESSUM</h2>
+
+		<button id="myBtn" class="btn btn-primary text-center">ZUR DATENSCHUTZERKLÄRUNG / ZUM IMPRESSUM</button>
+		<br>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+	
+	<div class="container">
+
+        <div class="panel-group" style="margin-top:2vh; border-bottom:none;">
+
+            <div class="panel panel-primary" style="border-bottom:none;">
+                <div class="panel-heading">
+                    <hr>
+                    <img src=" https://www.vhs.cloud/pics/option/logo.svg " style="width:100%; " alt="Logo der Berliner VHS ">
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="panel-group" style="font-size:2rem">
+
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+
+                    <h1 style="text-decoration:underline; text-align: center;"><strong> Datenschutzerklärung mit den folgenden Inhalten<br></h2></strong>
+
+                </div>
+
+                <div class="panel-body">
+                    <ul>
+                        <li>Grundlegendes<br></li>
+                        <li>Verantwortlichkeiten</li>
+                        <li>Zugriffsdaten</li>
+                        <li>Cookies</li>
+                        <li>Erfassung und Verarbeitung personenbezogener Daten</li>
+                        <li>Umgang mit Kommentaren und Beiträgen</li>
+                        <li>Nutzung von externen Diensten</li>
+                        <li>Ihre Rechte als Nutzer</li>
+                        <li>Löschung von Daten</li>
+                        <li>Widerspruchsrecht</li>
+                        <li>Datenschutzerklärung</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="panel-group">
+
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+                    <h2><strong>Grundlegendes</strong><br></h2>
+                </div>
+
+                <div class="panel-body">
+                    <p style="font-size:1.5rem">
+                        Diese Datenschutzerklärung soll die Nutzer dieser Website über die Art, den Umfang und den Zweck der Erhebung und Verwendung personenbezogener Daten durch die Berliner Volkshochschulen informieren.<br> Wir nehmen Ihren Datenschutz
+                        sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Vorschriften. Da durch neue Technologien und die ständige Weiterentwicklung dieser Webseite Änderungen an dieser Datenschutzerklärung
+                        vorgenommen werden können, empfehlen wir Ihnen, sich die Datenschutzerklärung in regelmäßigen Abständen wieder durchzulesen.<br> Definitionen der verwendeten Begriffe (z.B. "personenbezogene Daten" oder "Verarbeitung") finden Sie
+                        in Art. 4 DSGVO.<br> Verantwortlichkeiten Verantwortliche gem. Art. 4 Abs. 7 EU-Datenschutz-Grundverordnung (DS-GVO) sind die Berliner Volkshochschulen als öffentliche Stellen der Berliner Bezirksämter.<br> Unsere Berliner Beauftragte
+                        für Datenschutz und Informationsfreiheit erreichen Sie unter mailbox@datenschutz-berlin.de.<br>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="panel panel-primary">
+
+            <div class="panel-heading"><strong><h2>Zugriffsdaten</h2></strong></div>
+
+            <div class="panel-body">
+                <p style="font-size:1.5rem">
+                    Wir, die Berliner Volkshochschulen, erheben aufgrund unseres berechtigten Interesses (s. Art. 6 Abs. 1 lit. f. DSGVO) Daten über Zugriffe auf die Website und speichern diese als "Server-Logfiles" auf dem Server der Website ab. Folgende Daten werden dabei
+                    protokolliert:
+                    <br> Besuchte Website<br> Uhrzeit zum Zeitpunkt des Zugriffes<br> Menge der gesendeten Daten in Byte<br> Quelle/Verweis, von welchem Sie auf die Seite gelangten<br> Verwendeter Browser<br> Verwendetes Betriebssystem
+                    <br> Verwendete IP-Adresse<br> Die Server-Logfiles werden für maximal 7 Tage gespeichert und anschließend gelöscht. Die Speicherung der Daten erfolgt aus Sicherheitsgründen, um z. B. Missbrauchsfälle aufklären zu können. Müssen Daten
+                    aus Beweisgründen aufgehoben werden, sind sie solange von der Löschung ausgenommen bis der Vorfall endgültig geklärt ist.<br>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Cookies<br></h2>
+            </div>
+
+            <div class="panel-body">
+                <p style="font-size:1.5rem">
+                    Diese Website verwendet Cookies, die von unserem Server an Ihren Internet-Browser übertragen werden.<br> Bei Cookies handelt es sich um kleine Dateien, welche auf Ihrem Browser gespeichert werden. Durch den Einsatz von Cookies erhöht
+                    sich die Benutzerfreundlichkeit und Sicherheit dieser Website.<br> Gängige Browser bieten die Einstellungsoption, Cookies nicht zuzulassen. Damit haben Sie die Möglichkeit, die Erstellung von Cookies durch unsere Website zu verhinden.<br>                    Wichtig: Ohne die Verwendung von Cookies ist ein personalisierter Zugriff auf die Website nicht möglich. Geschützte Inhalte, die ausschließlich berechtigten Nutzern bereitgestellt werden, stehen Ihnen dann nicht zur Verfügung.<br>                    Erfassung und Verarbeitung personenbezogener Daten Der Websitebetreiber erhebt und verarbeitet von Ihnen personenbezogene Daten. Diese Verarbeitung ist notwendig, um der vertraglichen Vereinbarung, nämlich der Bereitstellung von Lerninhalten
+                    und der individuellen Betreuung durch die Kursleitenden der Volkshochschulen, nachzukommen.<br> Die personenbezogenen Daten geben wir nicht an Dritte weiter, auch nicht in anonymisierter Form. Als personenbezogene Daten gelten sämtliche
+                    Informationen, welche dazu dienen, Ihre Person zu bestimmen und zu Ihnen zurückverfolgt werden können. Insbesondere sind das Ihr Vor- und Nachname sowie Ihre E-Mail-Adresse.<br> Einige Teile der Website können auch, ohne Angaben zu
+                    Ihrer Person, also ohne persönlichen Account, genutzt werden.<br> Umgang mit Kommentaren und Beiträgen<br> Als authentifizierter Nutzer haben über Foren und anderen Aktivitäten die Möglichkeit, Beiträge oder Kommentare zu erstellen.
+                    Diese Kommentare und Beiträge werden so gespeichert, dass sie einen Rückschluss auf Ihre Person erlauben. Dies erfolgt aufgrund unseres berechtigten Interesses im Sinne des Art. 6 Abs. 1 lit. f. DSGVO und dient der Sicherheit von uns
+                    als Websitebetreiber: Denn sollte Ihr Kommentar gegen geltendes Recht verstoßen, können wir dafür belangt werden, weshalb wir ein Interesse an der Identität des Kommentar- bzw. Beitragsautors haben.
+                    <br> Nutzung von externen Diensten Auf der Website werden keine externen Dienste Dritter, wie z.B. Google Analytics, verwendet.<br> Innerhalb der Kursräume besteht jedoch die Möglichkeit, dass aufgrund der Thematik Videos und/oder
+                    Bilder von externen Quellen eingebunden werden.
+                    <br> Die Informationspflicht dazu liegt in der Verantwortung der eingesetzten Kursleitenden, da wir als Website-Betreiber darauf keinen Einfluss haben.<br>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Ihre Rechte als Nutzer<br></h2>
+            </div>
+
+            <div class="panel-body">
+                <p style="font-size:1.5rem">
+                    Sie haben als Nutzer das Recht, auf Antrag eine kostenlose Auskunft darüber zu erhalten, welche personenbezogenen Daten über Sie gespeichert wurden. Sie haben außerdem das Recht auf Berichtigung falscher Daten und auf die Verarbeitungseinschränkung oder
+                    Löschung Ihrer personenbezogenen Daten. Falls zutreffend, können Sie auch Ihr Recht auf Datenportabilität geltend machen.<br>
+                    <br> Sollten Sie annehmen, dass Ihre Daten unrechtmäßig verarbeitet wurden, können Sie eine Beschwerde bei der zuständigen Aufsichtsbehörde einreichen.<br> Die für uns zuständige Aufsichtsbehörde ist die<br><br>
+                    <strong>
+                    Berliner Beauftragte für Datenschutz und Informationsfreiheit<br>
+                    Friedrichstraße 219<br>
+                    10969 Berlin<br>
+                    Besuchereingang: Puttkamer Straße 16 – 18 (5. Etage)<br>
+                    Telefon: 030/138 89-0<br>
+                    Telefax: 030/215 50 50<br>
+                    E-Mail: mailbox@datenschutz-berlin.de<br>
+                    </strong>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Löschung von Daten<br></h2>
+            </div>
+
+            <div class="panel-body">
+                <p style="font-size:1.5rem">
+                    Sofern Ihr Wunsch nicht mit einer gesetzlichen Pflicht zur Aufbewahrung von Daten (z. B. zur Abrechnung vertraglich vereinbarter Leistungen) kollidiert, haben Sie ein Anrecht auf Löschung Ihrer Daten. Sollten die von uns gespeicherten Daten für ihre Zweckbestimmung
+                    nicht mehr notwendig sein und gibt es keine gesetzlichen Aufbewahrungsfristen, werden diese gelöscht. Falls eine Löschung nicht durchgeführt werden kann, da die Daten für zulässige gesetzliche Zwecke erforderlich sind, erfolgt eine
+                    Einschränkung der Datenverarbeitung. In diesem Fall werden die Daten gesperrt und nicht für andere Zwecke verarbeitet.<br> Widerspruchsrecht
+                    <br> Nutzer dieser Webseite können von ihrem Widerspruchsrecht Gebrauch machen und der Verarbeitung ihrer personenbezogenen Daten zu jeder Zeit widersprechen.<br> Wenn Sie eine Berichtigung, Sperrung, Löschung oder Auskunft über die
+                    zu Ihrer Person gespeicherten personenbezogenen Daten wünschen oder Fragen bzgl. der Erhebung, Verarbeitung oder Verwendung Ihrer personenbezogenen Daten haben oder erteilte Einwilligungen widerrufen möchten, können Sie in Ihrem Benutzerprofil
+                    in der Rubrik "Datenschutz und Richtlinien" eine entsprechende Anfrage stellen.<br>
+                </p> <br><br>
+            </div>
+
+        </div>
+
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h2>Ansprechpartner</h2>
+            </div>
+
+            <div class="panel-body" style="font-size:1.5rem">
+                Zusätzlich haben Sie die Möglichkeit den Ansprechpartner für Datenschutzfragen zu dieser Website<br><br>
+                <strong>
+                Servicezentrum der Berliner Volkshochschulen<br>
+                Freiheit 6<br>
+                13597 Berlin<br><br>
+                </strong> zu kontaktieren.<br><br>
+                </p>
+            </div>
+
+        </div>
+	
+	
+	
+    </div>
+
+
+	<div class="container">
+
+        <div class="panel-group " style="font-size:2rem ">
+            <div class="panel panel-primary ">
+                <div class="panel-heading text-center">
+
+                    <h1 style="text-decoration:underline; text-align: center;"><strong>IMPRESSUM</strong><br></h1>
+
+                </div>
+
+                <div class="panel-body ">
+                    <h1>Anschrift</h1>
+                    <p>Servicezentrum der Berliner Volkshochschulen <br> Freiheit 6 <br> 13597 Berlin <br></p>
+
+                    <h1>Kontaktdaten</h1>
+                    <p>e-mail.: vhs-it@vhs-servicezentrum.berlin.de <br> tel.: 030 / 90279 5240 <br></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	
+	
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

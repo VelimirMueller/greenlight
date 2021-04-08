@@ -48,8 +48,7 @@ class AdminsController < ApplicationController
 
     @pagy, @users = pagy(users)
   end
-  def participant_list
-	end
+
   # GET /admins/site_settings
   def site_settings
     @tab = params[:tab] || "appearance"
@@ -103,7 +102,8 @@ class AdminsController < ApplicationController
 # GET /admins/participant_lists
 #new controller method 2021-04-07
 
-
+  def participant_list
+  end
 	
   # MANAGE USERS
 
@@ -225,6 +225,10 @@ class AdminsController < ApplicationController
   end
 
   # SITE SETTINGS
+
+  def participant_lists
+
+  end	
 
   # POST /admins/update_settings
   def update_settings

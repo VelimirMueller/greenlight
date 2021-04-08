@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   match '/500', to: 'errors#internal_error', via: :all, as: :internal_error
 	
 #customcode	
-#  get "/participant_list", to: "participant_list#participant_lists"
+  get "/participant_list", to: "participant_list#participant_lists"
 
 
   # Signin/Signup routes.
@@ -47,8 +47,9 @@ Rails.application.routes.draw do
     get '/site_settings', to: 'admins#site_settings', as: :admin_site_settings
     get '/room_configuration', to: 'admins#room_configuration', as: :admin_room_configuration
     get '/roles', to: 'admins#roles', as: :admin_roles
-    get '/participant_list', to: 'participant_list#participant_list', as: :admin_participant_list
- 
+    
+
+
     # Manage Users
     get '/edit/:user_uid', to: 'admins#edit_user', as: :admin_edit_user
     post '/ban/:user_uid', to: 'admins#ban_user', as: :admin_ban

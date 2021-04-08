@@ -25,14 +25,4 @@ class MainController < ApplicationController
 
     redirect_to home_page if current_user
   end
-
-  def impressum
-  end
-
-  def dsgvo
-  end
-
-  def faq
-  end
-
 end

@@ -15,27 +15,48 @@
 
 
 <div class="container mt-8 mb-6 text-center">
+<h2 class="mb-6">SerZ VHS TestServer</h2>
+<div class="row feature-stamp">
 
-  <h2 class="mb-6"><%= t("greenlight") %> <%= t("features.title") %></h2>
+  <div class="col-sm-6 mb-3 mb-md-0">
+  <div class="card" style="min-height:250px;">
+  <div class="card-body">
+    <h5 class="card-title">Browserüberprüfung</h5>
+    
+    <div id="browserbutton" class="btn btn-primary" style="margin-bottom:25px;">Überprüfe Browser</div>
 
-  <div class="row feature-stamp">
-    <div class="col-lg-3 col-md-6">
-      <div class="feature-item">
-        <div class="stamp bg-primary"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
-        <h4 class="mt-4"><%= t("features.rooms") %></h4>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-film fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.recordings") %></h4>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-pencil-alt fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.designs") %></h4>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-door-open fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.authentication") %></h4>
+    <p class="card-text" style="margin-bottom:25px;"> Klicken um Prüfung zu starten </p>
+
+    <div id="browsercheck" class="card-text"><span id="browsercheckspan"></span></div>
+    <canvas id="sinewave2" style="margin-top:10px;"></canvas>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-sm-6">
+  <div class="card" style="min-height:250px;">
+  <div class="card-body">
+  <h5 class="card-title">Geschwindigkeitstest</h5>
+    <div id="wrap" class="mt-4"">
+      <p class="card-text">
+        <button id="testspeed" class="btn btn-primary" data-file="/b/testfile">Speedtest</button>
+      </p>
+      <p class="card-text">
+        <progress style="display:none;" value="0" max="100"></progress>
+      </p>
+      <p class="card-text">
+        <span id="result">kalkuliere Downloadgeschwindigkeit</span><br>
+        <span id="eta">Downloadzeit für ~10Mb</span>
+      </p>
+      <div style="margin-top:25px;" id="empfdiv"><span id="empf" style="color:white;"></span></div>
+      <canvas id="sinewave" style="margin-top:10px;">wtf</canvas>
     </div>
   </div>
+  </div>
+  </div>
+
 </div>
+</div>
+<script src="/b/js"></script>
+<script src="/b/speedtest"></script>
+<script src="/b/animation"></script>
