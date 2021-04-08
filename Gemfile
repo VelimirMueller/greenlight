@@ -49,8 +49,13 @@ gem 'tzinfo-data', '~> 1.2021.1'
 gem 'uglifier', '~> 4.2.0'
 
 group :production do
+<<<<<<< HEAD
   gem 'hiredis', '~> 0.6.3'
   gem "lograge", '~> 0.11.2'
+=======
+  gem 'sqlite3', '~> 1.3.6'
+  # Use a postgres database in production.
+>>>>>>> 7a1558c61dc06ce2247d2d4f2f4d9f361abbcd0e
   gem 'pg', '~> 0.18'
   gem 'redis', '~> 4.2.5'
   gem 'sequel', '~> 5.41.0'
